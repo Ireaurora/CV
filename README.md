@@ -1,3 +1,3 @@
-# rollthedice
+# myCV
 
-Two dice are rolled and the result is given. Perfect for Chicago and Highest/Lowest wins
+Start by opening the "new.html"file
