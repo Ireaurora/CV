@@ -1,5 +1,7 @@
 /* Add a black background color to the top navigation */
-
+header, nav, article, footer, address {
+    display: block;
+}
 
 * {
     box-sizing: border-box;
@@ -8,10 +10,13 @@
 
 body {
     background-image:url("backk.png");
-    background-repeat: no-repeat;
     background-size: cover;
-    height:100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+
 }
+
 
 .topnav {
 
@@ -64,7 +69,7 @@ body {
     position: absolute;
 
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -158,12 +163,14 @@ body {
     font-size: 80px;
     text-align: left;
 }
-* {
-    box-sizing: border-box;
+
+
+.o-item {
+    padding: 500px;
+    font-size: 80px;
+
 }
-body {
-    margin: 0;
-}
+
 /* Style the header */
 .header {
     padding: 20px;
@@ -199,67 +206,9 @@ body {
 .footer {
     padding: 10px;
     text-align: center;
-    width:100%;
-    position:fixed;
-    bottom:0px;
-}
-
-  #circle2
-  {
-      height: 300px;
-      width: 300px;
-      background-color: white;
-      border-radius: 50%;
-      position: relative;
-      border:1px solid black;
-  }
-#circle
-{
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    border-radius: 50%;
-    border:1px solid black;
-    position:absolute;
-    margin:-100px 0px 0px -100px;
-    top:50%;
-    left:50%;
-}
-.circle-box{
-    height:100px;
-    width:100px;
-    position:absolute;
-    top:0;
-    left:0;
-    right:17%;
-    bottom:24%;
-    margin:auto;
-}
-#image1 {
-    position:absolute;
-    top:20%;
-    left: 80%;
-    width: 125px;
-    height:140px;
-    border: 2px solid white;
-}
-#image2 {
-    position:absolute;
-    top:42%;
-    left: 80%;
-    width: 125px;
-    height:140px;
-    background-color:white;
-    border: 2px solid white;
-}
-#image3 {
-    position:absolute;
-    top:64%;
-    left: 80%;
-    width: 125px;
-    height:140px;
-    background-color:white;
-    border: 2px solid white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 /* Box design */
 .box
@@ -271,16 +220,8 @@ body {
     right: 10.698%;
     top: 5%;
 }
-/* Oval design*/
-.oval {
-    height: 135px;
-    width: 200px;
-    border-radius: 50%;
-    border:1px solid white;
-    position:absolute;
-    right: 80%;
-    top: 5%;
-}
+
+
 .h1 {
     display: block;
     font-size: 1.2em;
@@ -303,7 +244,7 @@ body {
     border: 2px solid #008CBA;
 }
 .logoimage {
-    margin: 0;
+
     width:3000px;
     height:1200px;
     position: absolute;
