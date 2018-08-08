@@ -1,4 +1,4 @@
-/* Add a black background color to the top navigation */
+
 header, nav, article, footer, address {
     display: block;
 }
@@ -67,7 +67,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-
+color:deepskyblue;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
@@ -253,3 +253,102 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+.mySlides {
+    display: none;
+}
+
+.image{
+    width:1900px;
+    height:1300px;
+}
+img {
+    vertical-align: middle;
+}
+
+
+/* The dots/bullets/indicators */
+.newdot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.myDogs {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*smaller on specific screens*/
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
