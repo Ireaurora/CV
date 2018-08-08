@@ -1,12 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
+<link rel="stylesheet" href="css.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Voluntary Work</title>
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js.js"></script>
+    <script src="js.js"> </script>
+
+
 </head>
+
+
 <body>
 <div class="topnav" id="myTopnav">
     <a href="new.html" class="active">Home</a>
@@ -29,29 +37,151 @@
 </div>
 
 <div class="grid-item">
-    <h1><b>Soft Skills</b></h1>
-    <ul>
-        <li>
-                      <b> Languages: </b>
-                      
-                      Italian and English <i> (Bilingual) </i>
-        </li>
-        <li>
-            Fast-Learner
-        </li>
-        <li>
-            Team-Worker
-        </li>
-        <li>
-            Time management
-        </li>
-        <li>
-            Problem Solving
-        </li>
-    </ul>
 
+
+
+    <p style="font-size:100px"><b>My projects in Graphics</b></p>
+
+    <div class="o-item">
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="im20.png" class="image">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="im201.png" class="image">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade ">
+                <img src="im204.png" class="image">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade ">
+                <img src="im205.png" class="image">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="im206.png" class="image" >
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="im208.png" class="image" >
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="im2011.png" class="image" >
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="im2012.png" class="image">
+                <div class="text"></div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+
+
+
+
+
+    </div>
 </div>
 
 
-</body>
+<div class="grid-item">
+
+    <p style="font-size:100px"><b>What do I like to do</b></p>
+    <div class="o-item">
+
+
+
+        <div class="slideshow-container">
+
+            <div class="myDogs fade">
+                <img src="im201.png" class="image">
+                <div class="text"></div>
+            </div>
+
+            <div class="myDogs fade">
+                <img src="im202.png" class="image">
+                <div class="text"></div>
+
+            </div>
+
+            <div class="myDogs fade">
+                <img src="im2012.png" class="image">
+                <div class="text"></div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+        <script>
+            var dogIndex = 0;
+            showDogs();
+            function showDogs() {
+
+                var i;
+                var dogs = document.getElementsByClassName("myDogs");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < dogs.length; i++) {
+                    dogs[i].style.display = "none";
+                }
+                dogIndex++;
+                if (dogIndex > dogs.length) {dogIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                dogs[dogIndex-1].style.display = "block";
+                dots[dogIndex-1].className += " active";
+                setTimeout(showDogs, 2000); // Change image every 2 seconds
+            }
+
+            let slideIndex = 0;
+
+
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 1000); // Change image every 2 seconds
+            }
+        </script>
+
 </html>
