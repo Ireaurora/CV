@@ -3,9 +3,61 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My certificates</title>
+    <script src="js.js"></script>
     <link rel="stylesheet" href="css.css">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        .myCats {
+            display: none;
+        }
+
+        .image{
+            width:1900px;
+            height:1300px;
+        }
+        img {
+            vertical-align: middle;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            display:inline-block;
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+        }
+
+    </style>
 </head>
-<body>
 
 
 <body>
@@ -31,12 +83,75 @@
 
 
 <div>
+
     <div class="grid-item">
-        <h1>
-            SQL Fundamentals </br>  Feb 2018
-        </h1>
-        <p> SoloLearn
-        </p>
+
+        <h1> SOLOLEARN COURSES </h1>
+
+        <div class="slideshow-container">
+            <div class="myCats">
+                <img src="cert-1014-1961907.jpg" class="image">
+                <div class="text"></div>
+            </div>
+
+            <div class="myCats">
+                <img src="cert-1023-1961907.jpg" class="image">
+                <div class="text"></div>
+            </div>
+
+            <div class="myCats">
+                <img src="cert-1024-1961907.jpg" class="image">
+                <div class="text"></div>
+            </div>
+            <div class="myCats">
+                <img src="cert-1059-1961907.jpg" class="image">
+                <div class="text"></div>
+            </div>
+            <div class="myCats">
+                <img src="cert-1060-1961907.jpg" class="image" >
+                <div class="text"></div>
+            </div>
+
+            <div class="myCats">
+                <img src="cert-1082-1961907.jpg" class="image" >
+                <div class="text"></div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+        <script>
+            var catIndex = 0;
+
+
+            showCats();
+
+            function showCats() {
+                var i;
+                var cats = document.getElementsByClassName("myCats");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < cats.length; i++) {
+                    cats[i].style.display = "none";
+                }
+                catIndex++;
+                if (catIndex > cats.length) {catIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                cats[catIndex-1].style.display = "block";
+                dots[catIndex-1].className += " active";
+                setTimeout(showCats, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+    </div>
     </div>
     <div class="grid-item">
         <h1>
@@ -47,28 +162,17 @@
     </div>
     <div class="grid-item">
         <h1>
-            <h1>
-                HTML fundamentals </br>  Aug 2017
-            </h1>
-            <p> SoloLearn
-            </p>
-    </div>
-    <div class="grid-item"><h1>
-        <h1>
-            PHP tutorials </br>  Aug 2017
-        </h1>
-        <p> SoloLearn
-        </p>
-    </div>
-    <div class="grid-item">
-        <h1>
             Art School </br>  2011 to 2012
         </h1>
-        <p> SoloLearn
-        </p>
     </div>
+
+
+
+
 
 
 </div>
+</body>
+
 </body>
 </html>
