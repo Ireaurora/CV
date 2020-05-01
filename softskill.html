@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<link rel="stylesheet" href="css.css">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
 <head>
     <script src="js.js"> </script>
-
-
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-
 <body>
 <div class="topnav" id="myTopnav">
     <a href="new.html" class="active">Home</a>
@@ -35,28 +25,18 @@
     <a href="computerskills.html">Computer Skills</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
 <div class="grid-item">
-
-
-
     <p style="font-size:100px"><b>My projects in Graphics</b></p>
-
     <div class="o-item">
-
-
         <div class="slideshow-container">
-
             <div class="mySlides fade">
                 <img src="im20.png" class="image">
                 <div class="text"></div>
             </div>
-
             <div class="mySlides fade">
                 <img src="im201.png" class="image">
                 <div class="text"></div>
             </div>
-
             <div class="mySlides fade ">
                 <img src="im204.png" class="image">
                 <div class="text"></div>
@@ -69,7 +49,6 @@
                 <img src="im206.png" class="image" >
                 <div class="text"></div>
             </div>
-
             <div class="mySlides fade">
                 <img src="im208.png" class="image" >
                 <div class="text"></div>
@@ -93,53 +72,32 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
-
         </div>
-
-
-
-
-
     </div>
 </div>
-
-
 <div class="grid-item">
-
     <p style="font-size:100px"><b>What do I like to do</b></p>
     <div class="o-item">
-
-
-
         <div class="slideshow-container">
-
             <div class="myDogs fade">
                 <img src="im201.png" class="image">
                 <div class="text"></div>
             </div>
-
             <div class="myDogs fade">
                 <img src="im202.png" class="image">
                 <div class="text"></div>
-
             </div>
-
             <div class="myDogs fade">
                 <img src="im2012.png" class="image">
                 <div class="text"></div>
-
             </div>
-
         </div>
         <br>
-
         <div style="text-align:center">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-
-
         <script>
             var dogIndex = 0;
             showDogs();
@@ -160,10 +118,9 @@
                 dots[dogIndex-1].className += " active";
                 setTimeout(showDogs, 2000); // Change image every 2 seconds
             }
-
+            
             let slideIndex = 0;
-
-
+            
             showSlides();
 
             function showSlides() {
@@ -183,5 +140,4 @@
                 setTimeout(showSlides, 1000); // Change image every 2 seconds
             }
         </script>
-
 </html>
