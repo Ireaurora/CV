@@ -6,24 +6,18 @@
     <script src="js.js"></script>
     <link rel="stylesheet" href="css.css">
     <style>
-
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Verdana, sans-serif;
-        }
-        .myCats {
-            display: none;
-        }
+        * { box-sizing: border-box; }
+        
+        body { font-family: Verdana, sans-serif; }
+        
+        .myCats { display: none; }
 
         .image{
             width:1900px;
             height:1300px;
         }
-        img {
-            vertical-align: middle;
-        }
+        
+        img { vertical-align: middle; }
 
         .slideshow-container {
             max-width: 1000px;
@@ -52,14 +46,11 @@
             transition: background-color 0.6s ease;
         }
 
-        @media only screen and (max-width: 300px) {
+        @media only screen and (max-width: 300px) { 
             .text {font-size: 11px}
         }
-
     </style>
-</head>
-
-
+    </head>
 <body>
 <div class="topnav" id="myTopnav">
     <a href="new.html" class="active">Home</a>
@@ -80,25 +71,19 @@
     <a href="computerskills.html">Computer Skills</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
-
+    
 <div>
-
     <div class="grid-item">
-
         <h1> SOLOLEARN COURSES </h1>
-
         <div class="slideshow-container">
             <div class="myCats">
                 <img src="cert-1014-1961907.jpg" class="image">
                 <div class="text"></div>
             </div>
-
             <div class="myCats">
                 <img src="cert-1023-1961907.jpg" class="image">
                 <div class="text"></div>
             </div>
-
             <div class="myCats">
                 <img src="cert-1024-1961907.jpg" class="image">
                 <div class="text"></div>
@@ -111,7 +96,6 @@
                 <img src="cert-1060-1961907.jpg" class="image" >
                 <div class="text"></div>
             </div>
-
             <div class="myCats">
                 <img src="cert-1082-1961907.jpg" class="image" >
                 <div class="text"></div>
@@ -125,11 +109,9 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
-
         </div>
         <script>
             var catIndex = 0;
-
 
             showCats();
 
@@ -150,29 +132,15 @@
                 setTimeout(showCats, 2000); // Change image every 2 seconds
             }
         </script>
-
     </div>
     </div>
     <div class="grid-item">
-        <h1>
-            Big Data: Mathematical Modelling </br>  Aug 2017
-        </h1>
-        <p> Future Learn
-        </p>
+        <h1>Big Data: Mathematical Modelling </br>  Aug 2017 </h1>
+        <p>Future Learn</p>
     </div>
     <div class="grid-item">
-        <h1>
-            Art School </br>  2011 to 2012
-        </h1>
+        <h1>Art School </br>  2011 to 2012</h1>
     </div>
-
-
-
-
-
-
 </div>
-</body>
-
 </body>
 </html>
